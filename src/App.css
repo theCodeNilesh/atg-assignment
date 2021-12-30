@@ -517,6 +517,7 @@ input:-moz-placeholder {
   border: 0.6px solid #d9d9db;
   border-radius: 2px;
   min-height: 3.8rem;
+  cursor: pointer;
 }
 
 .illustxt {

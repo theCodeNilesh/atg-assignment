@@ -25,11 +25,6 @@ import article3 from "./img/article3.png";
 import user2 from "./img/user2.jpg";
 
 function App() {
-  const [modal, setModal] = useState(false);
-
-  const modalToggel = () => {
-    setModal(!modal);
-  };
   return (
     <div className="App">
       <Header />
@@ -59,23 +54,6 @@ function App() {
           </Col>
         </Row>
       </Container>
-
-      <button type="button" class="btn btn-primary" onClick={modalToggel}>
-        Launch demo modal
-      </button>
-      <Modal
-        isOpen={modal}
-        fade={true}
-        toggle={modalToggel}
-        style={{ width: "200px", display: "block" }}
-      >
-        <ModalHeader toggle={modalToggel}>Modal title</ModalHeader>
-        <ModalBody>Lorem ipsum dolor sit amet,</ModalBody>
-        <ModalFooter>
-          <Button onClick={true}>Do Something</Button>{" "}
-          <Button onClick={true}>Cancel</Button>
-        </ModalFooter>
-      </Modal>
     </div>
   );
 }
