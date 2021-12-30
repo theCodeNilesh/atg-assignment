@@ -341,7 +341,19 @@ input:-moz-placeholder {
   border-radius: 14px !important;
   color: black !important;
   border: none !important;
-  box-shadow: none;
+  box-shadow: none !important;
+  outline: none;
+}
+
+.followedbtn {
+  padding: 0.6rem !important;
+  padding-right: 3rem !important;
+  padding-left: 3rem !important;
+  background-color: black !important;
+  border-radius: 14px !important;
+  color: white !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 .groupcard {
@@ -359,6 +371,170 @@ input:-moz-placeholder {
   text-align: right;
 
   color: #2f6ce5;
+}
+
+.modal-content {
+  -webkit-border-radius: 0.8rem !important;
+  -moz-border-radius: 0.8rem !important;
+  border-radius: 0.8rem !important;
+  border: none !important;
+  outline: none !important;
+}
+
+.Modal {
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.modal-header {
+  display: block !important;
+  background-color: #effff4;
+}
+
+.modalheader {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #008a45;
+
+  /* identical to box height, or 114% */
+  padding-top: 1.7rem;
+  padding-bottom: 1.7rem;
+}
+
+.txticon {
+  font-family: none !important;
+  font-weight: none !important;
+  font-size: none !important;
+}
+
+#myModal .btn-close {
+  display: none;
+}
+
+.btnclose {
+  border: none !important;
+  border-radius: 50%;
+}
+
+.modalheading {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+
+  color: #000000;
+}
+
+.firstname {
+  width: 320px;
+  height: 46px;
+  background-color: #f7f8fa !important;
+  border: 1px solid #d9d9db;
+  border-radius: 0.2rem;
+  width: 100%;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  color: black;
+  padding: 0.5rem !important;
+}
+
+.firstname:active {
+  border-color: #d9d9db !important ;
+  outline: none !important;
+}
+.firstname:focus {
+  border-color: #d9d9db !important ;
+  outline: none !important;
+}
+
+.firstname::-webkit-input-placeholder {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  color: #8a8a8a !important;
+  letter-spacing: 0.1rem;
+}
+.firstname:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+input:-moz-placeholder {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  color: #8a8a8a !important;
+  letter-spacing: 0.1rem;
+}
+
+.eye {
+  background: url(./img/visibility_24px.svg) no-repeat right;
+  background-size: 2rem;
+  cursor: pointer;
+}
+
+.submitbtn {
+  width: 100%;
+  background-color: #2f6ce5 !important;
+  border-radius: 2rem !important;
+  font-family: "IBM Plex Sans", sans-serif !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  text-align: center;
+  color: #ffffff;
+  height: 4rem !important;
+  box-shadow: none !important;
+  border: none !important;
+  letter-spacing: 0.05rem;
+}
+
+.submitbtn:focus {
+  shape-outside: none !important;
+  border: none !important;
+}
+.submitbtn:active {
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.footertxt {
+  font-family: "IBM Plex Sans", sans-serif !important;
+  font-weight: 500;
+  font-size: 1.4rem;
+
+  color: #000000;
+}
+
+.footerbtn {
+  width: 100%;
+  background: #ffffff;
+  border: 0.6px solid #d9d9db;
+  border-radius: 2px;
+  min-height: 3.8rem;
+}
+
+.illustxt {
+  font-family: "IBM Plex Sans", sans-serif !important;
+
+  font-weight: 500;
+  font-size: 1.3rem;
+  text-align: right;
+  color: #3d3d3d;
+}
+
+.forgettxt {
+  font-family: "IBM Plex Sans", sans-serif !important;
+  font-weight: 600;
+  font-size: 1.3rem;
+  text-align: center;
+  letter-spacing: 0.06rem;
+  color: #000000;
 }
 
 @media (max-width: 768px) {

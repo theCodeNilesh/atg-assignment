@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Row, Col, Card, CardBody, Button } from "reactstrap";
 
 import user1 from "../img/user1.jpg";
 
 const GroupItems = ({ followimg = `${user1}`, followname = "Name" }) => {
+  const [follow, setFollow] = useState(false);
+
+  const followed = () => {
+    setFollow(!follow);
+  };
   return (
     <Card className="groupcard mt-3">
       <CardBody className="text-left align-middle">
@@ -24,7 +29,12 @@ const GroupItems = ({ followimg = `${user1}`, followname = "Name" }) => {
             <h1 className="grouptxt ">{followname}</h1>
           </Col>
           <Col md="3" style={{ display: "flex", alignItems: "center" }}>
-            <Button color="primary followbtn">Follow</Button>
+            <Button
+              onClick={followed}
+              className={follow ? "followedbtn" : "followbtn"}
+            >
+              Follow
+            </Button>
           </Col>
         </Row>
       </CardBody>

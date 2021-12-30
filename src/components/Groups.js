@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Row, Col } from "reactstrap";
 
 import cross from "../img/cross.svg";
@@ -12,6 +12,11 @@ import follow4 from "../img/follow4.png";
 import GroupItems from "./GroupItems";
 
 const Groups = () => {
+  const [joinGroup, setJoinGroup] = useState(false);
+
+  const groupToggel = () => {
+    setJoinGroup(!joinGroup);
+  };
   return (
     <Container fluid className="mt-5">
       <div>
@@ -21,6 +26,8 @@ const Groups = () => {
           id="search"
           className="searchgrp locationicn crossicn"
           placeholder="Enter your location"
+          onFocus={groupToggel}
+          onfocusout={"groupToggel()"}
         ></input>
       </div>
 
@@ -49,11 +56,15 @@ const Groups = () => {
         </Row>
       </div>
 
-      <GroupItems followimg={follow1} followname="Liesure" />
-      <GroupItems followimg={follow2} followname="activism" />
-      <GroupItems followimg={follow3} followname="MBA" />
-      <GroupItems followimg={follow4} followname="philosophy" />
-      <div className="seemore mt-5">See more...</div>
+      {joinGroup ? (
+        <>
+          <GroupItems followimg={follow1} followname="Liesure" />
+          <GroupItems followimg={follow2} followname="activism" />
+          <GroupItems followimg={follow3} followname="MBA" />
+          <GroupItems followimg={follow4} followname="philosophy" />
+          <div className="seemore mt-5">See more...</div>{" "}
+        </>
+      ) : null}
     </Container>
   );
 };
