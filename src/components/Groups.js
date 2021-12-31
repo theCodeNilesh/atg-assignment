@@ -33,7 +33,7 @@ const Groups = () => {
 
       <div className="ms-3 mt-5">
         <Row>
-          <Col md="1">
+          <Col xs="1">
             <img src={info} alt="" style={{ opacity: "0.5" }} />
           </Col>
           <Col>
@@ -47,7 +47,7 @@ const Groups = () => {
 
       <div style={{ marginTop: "5rem" }} className="mt-5*2 ms-3">
         <Row className="mt-5">
-          <Col md="1">
+          <Col xs="1">
             <img src={like} alt="like" />
           </Col>
           <Col className="ms-3">

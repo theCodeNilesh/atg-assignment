@@ -32,7 +32,7 @@ function App() {
       <Tab />
       <Container className="mb-5">
         <Row>
-          <Col md="9">
+          <Col sm="9" md="8" lg="9">
             <Article
               title="article"
               heading="What if famous brands had regular fonts? Meet RegulaBrands! "
@@ -49,7 +49,7 @@ function App() {
               name="Sarah West"
             />
           </Col>
-          <Col md="3">
+          <Col sm="3" md="4" lg="3">
             <Groups />
           </Col>
         </Row>

@@ -13,7 +13,7 @@ const GroupItems = ({ followimg = `${user1}`, followname = "Name" }) => {
     <Card className="groupcard mt-3">
       <CardBody className="text-left align-middle">
         <Row>
-          <Col md="2">
+          <Col xs="2" sm="3" md="3" lg="2">
             <img
               height="36"
               width="36"
@@ -22,13 +22,22 @@ const GroupItems = ({ followimg = `${user1}`, followname = "Name" }) => {
             />
           </Col>
           <Col
-            md="6"
+            xs="6"
+            sm="7"
+            md="5"
+            lg="6"
             className="align-middle ms-2"
             style={{ display: "flex", alignItems: "center" }}
           >
             <h1 className="grouptxt ">{followname}</h1>
           </Col>
-          <Col md="3" style={{ display: "flex", alignItems: "center" }}>
+          <Col
+            xs="3"
+            sm="1"
+            md="3"
+            lg="3"
+            style={{ display: "flex", alignItems: "center" }}
+          >
             <Button
               onClick={followed}
               className={follow ? "followedbtn" : "followbtn"}

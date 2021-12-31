@@ -31,7 +31,7 @@ const Article = ({
       <CardBody className="text-left mt-2 ms-4">
         <CardText className="title">{title}</CardText>
         <Row>
-          <Col md="11" style={{ display: "flex", alignItems: "center" }}>
+          <Col xs="11" style={{ display: "flex", alignItems: "center" }}>
             <CardTitle className="cardtitle">{heading}</CardTitle>
           </Col>
           <Col style={{ display: "flex", alignItems: "center" }}>
@@ -42,11 +42,25 @@ const Article = ({
         <CardText className="secondary">{content}</CardText>
         <CardFooter className="cardfooter mt-5 mb-3 ">
           <Row>
-            <Col md="9" style={{ display: "flex", alignItems: "center" }}>
+            <Col
+              xs="9"
+              sm="8"
+              md="6"
+              lg="9"
+              className="col-xs-3"
+              style={{ display: "flex", alignItems: "center" }}
+            >
               <img height="48" width="48" className=" profile" src={profile} />
               <span className="name">{name}</span>
             </Col>
-            <Col md="3" style={{ display: "flex", alignItems: "center" }}>
+            <Col
+              xs="3"
+              sm="4"
+              md="6"
+              lg="3"
+              className="col-xs-3"
+              style={{ display: "flex", alignItems: "center" }}
+            >
               <div style={{ display: "flex", alignItems: "center" }}>
                 <span className="views">{views} views</span>
 
